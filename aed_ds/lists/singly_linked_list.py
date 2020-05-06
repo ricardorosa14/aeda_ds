@@ -1,5 +1,5 @@
-from tad_list import List 
-from nodes import SingleListNode
+from .tad_list import List 
+from .nodes import SingleListNode
 from ..exceptions import EmptyListException, InvalidPositionException, NoSuchElementException 
 
 class SinglyLinkedList(List):
@@ -133,7 +133,7 @@ class SinglyLinkedList(List):
             raise InvalidPositionException
         current_position = 0
         node = self.head
-        while current_position < postion -1):
+        while (current_position < postion -1):
             node = node.get_next()
             current_position += 1
 
