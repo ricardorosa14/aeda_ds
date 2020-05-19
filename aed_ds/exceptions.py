@@ -1,9 +1,11 @@
 class EmptyListException(Exception):
-    print('Nao existem elementos na lista.')
+    pass
+    #print('Nao existem elementos na lista.')
 
 class InvalidPositionException(Exception):
-    print('Posicao invalida.')
+    pass
+    #print('Posicao invalida.')
 
 class NoSuchElementException(Exception):
-    print('Nao existe o elemento pedido.')
-    
+    pass
+    #print('Nao existe o elemento pedido.')

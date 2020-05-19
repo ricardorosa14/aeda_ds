@@ -8,7 +8,7 @@ class Iterator(ABC):
     # Returns the next element in the iteration.
     # Throws NoSuchElementException
     @abstractmethod
-    def get_next(self): pass
+    def next(self): pass
 
     # Restarts the iteration. After rewind, if the iteration is not empty, next will return the first element in the iteration.
     @abstractmethod
