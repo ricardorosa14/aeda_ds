@@ -1,6 +1,5 @@
 class EmptyListException(Exception):
-    pass
-    #print('Nao existem elementos na lista.')
+    pass 
 
 class InvalidPositionException(Exception):
     pass
@@ -8,4 +7,7 @@ class InvalidPositionException(Exception):
 
 class NoSuchElementException(Exception):
     pass
-    #print('Nao existe o elemento pedido.')
+
+class DuplicatedKeyException(Exception):
+    pass
+    

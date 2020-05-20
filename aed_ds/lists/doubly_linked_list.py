@@ -68,11 +68,11 @@ class DoublyLinkedList(SinglyLinkedList):
 
     def remove_last(self):
         if self.num_elements == 1:
-            old_tail = self.tail()
+            old_tail = self.tail
             self.head = None
             self.tail = None
             self.num_elements = 0
-            return old_tail.get_element
+            return old_tail.get_element()
         elif self.num_elements == 0:
             raise EmptyListException()
         else:
@@ -82,13 +82,14 @@ class DoublyLinkedList(SinglyLinkedList):
             self.tail.set_next(None)
             self.num_elements -= 1
             return old_tail.get_element()
+
     def remove(self, position):
-        if position < 0 or position > (self.size() - 1):
+        if position < 0 or position > (self.size() - 1) :
             raise InvalidPositionException()
         else:
             if position == 0:
                 return self.remove_first()
-            elif position == self.size()-1:
+            elif position == (self.size()-1):
                 return self.remove_last()
             else:
                 current = self.head
