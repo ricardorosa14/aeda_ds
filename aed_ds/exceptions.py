@@ -10,4 +10,11 @@ class NoSuchElementException(Exception):
 
 class DuplicatedKeyException(Exception):
     pass
+
+class FullStackException(Exception):
+    pass
+
+class EmptyStackException(Exception):
+    pass
+
     
